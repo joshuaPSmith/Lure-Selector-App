@@ -20,7 +20,7 @@ const Weather: React.FC<WeatherProps> = ({ setLightCondition }) => {
                             `https://api.weatherapi.com/v1/current.json`,
                             {
                                 params: {
-                                    key: '7b53366b083c44919f9141941241312', // Replace with your WeatherAPI key
+                                    key: process.env.REACT_APP_WEATHER_API_KEY, // Replace with your WeatherAPI key
                                     q: `${latitude},${longitude}`
                                 },
                             }
@@ -53,13 +53,13 @@ const Weather: React.FC<WeatherProps> = ({ setLightCondition }) => {
         return <p className="text-center">Loading weather...</p>;
     }
 
-    const { temp_c } = weather.current;
+    const { temp_f } = weather.current;
     const condition = weather.current.condition.text;
 
     return (
         <div className="bg-yellow-100 p-4 rounded-lg text-center shadow-md mb-5">
             <h3 className="text-lg font-semibold text-yellow-700">🌤 Current Weather</h3>
-            <p className="text-gray-700">Temperature: {temp_c}°C</p>
+            <p className="text-gray-700">Temperature: {temp_f}°F</p>
             <p className="text-gray-700">Condition: {condition}</p>
         </div>
     );
