@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.7597e9d7.css",
-    "main.js": "/static/js/main.2ca91d17.js",
-    "index.html": "/index.html",
-    "main.7597e9d7.css.map": "/static/css/main.7597e9d7.css.map",
-    "main.2ca91d17.js.map": "/static/js/main.2ca91d17.js.map"
+    "main.css": "/Lure-Selector-App/static/css/main.7597e9d7.css",
+    "main.js": "/Lure-Selector-App/static/js/main.5f771992.js",
+    "index.html": "/Lure-Selector-App/index.html",
+    "main.7597e9d7.css.map": "/Lure-Selector-App/static/css/main.7597e9d7.css.map",
+    "main.5f771992.js.map": "/Lure-Selector-App/static/js/main.5f771992.js.map"
   },
   "entrypoints": [
     "static/css/main.7597e9d7.css",
-    "static/js/main.2ca91d17.js"
+    "static/js/main.5f771992.js"
   ]
 }
